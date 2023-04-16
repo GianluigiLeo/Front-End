@@ -1,0 +1,8 @@
+{
+    "content": [
+        {"text": "Home", "link": "https://www.w3schools.com/cssref/sel_hover.php"},
+        {"text": "About", "link": "https://www.youtube.com/watch?v=YBbUIk_Fk34"},
+        {"text": "Contatti", "link": "www.google.it"},
+        {"text": "Servizi", "link": "www.google.it"}
+    ]
+}

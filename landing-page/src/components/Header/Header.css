@@ -1,0 +1,51 @@
+.Header {
+    display:flex;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    padding-top: 1.20rem;
+    padding-bottom: 1.20rem;
+    /* gap: rem; */
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    animation: animationHeader 2s ease 0s 1 normal forwards;
+
+}
+
+
+/* Animation */
+@keyframes animationHeader {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
+}
+
+
+
+/* 320px — 480px: dispositivi mobili
+481px — 768px: iPad, tablet
+769px — 1024px: piccoli schermi, laptop
+1025px — 1200px: desktop, schermi di grandi dimensioni
+1201px e oltre: schermi extra large, TV  */
+
+
+@media screen and (min-width: 769px){
+
+    .Header{
+        position: relative;
+        /* top:0px; */
+        height: 10px;
+    }
+}
+
+

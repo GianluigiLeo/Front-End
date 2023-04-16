@@ -1,0 +1,128 @@
+.Nav {
+    width: 1.8rem;
+    height: 1.0rem;  
+}
+
+.Nav > span{
+    background-color: black;
+    border-radius: 10%;
+    height: 2px;
+    width: 100%;
+    display: block;
+    margin: 0px 0px 5px 0px;
+    
+}
+
+
+/* Animation Hamburger menu */
+.open.Nav > span {
+    transform: rotate(-45deg);
+    transition: all 0.35s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-top: 10px;
+    
+}
+
+.open.Nav > span:nth-child(1) {
+    transform: rotate(45deg);
+    transition: all 0.35s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-bottom: -23px;
+}
+
+.open.Nav > span:nth-child(2) { 
+    transition: all 0s cubic-bezier(0.075, 0.82, 0.165, 1);
+    visibility: hidden;
+}
+
+
+
+
+/* MenuContent */
+
+.Menu{
+    padding: 0px;
+    visibility: hidden;
+}
+
+
+.Menu > ul {
+    background-color: white;
+    list-style: none;
+    padding: 1rem;
+    border-right: 1px solid #eeeeee;
+    visibility: hidden;
+    height: 41.6875rem;
+}
+
+.animation.Menu{
+    animation: menuAnimation 1s linear 0s 1 normal forwards;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    width: 60%;
+    z-index: 20;
+
+}
+
+
+.Menu > ul > li {
+    padding-top: .625rem;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: .625rem;
+} 
+.Menu > ul > li > a {
+    color:black;
+    text-decoration: none;
+}
+
+
+/* Animations */
+@keyframes menuAnimation {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* 320px — 480px: dispositivi mobili
+481px — 768px: iPad, tablet
+769px — 1024px: piccoli schermi, laptop
+1025px — 1200px: desktop, schermi di grandi dimensioni
+1201px e oltre: schermi extra large, TV  */
+
+
+@media screen and (min-width: 769px){
+    .Nav{
+        position: absolute;
+        visibility: hidden;
+    }
+    .Menu{
+        position: relative;
+        height: 10px;
+    }
+    .Menu > ul{
+        display: flex;
+        gap: 1.5rem;
+        justify-content: space-around;
+        align-content: center;
+        /* position: relative; */
+    }
+
+    .Menu > ul > li{
+        visibility: visible;
+        border: none;
+    }
+
+    .Menu > ul > li a {
+        padding: 1rem;
+    } 
+
+    .Nav > ul > li a:hover {
+        background-color: lightgoldenrodyellow;
+    } 
+}
+

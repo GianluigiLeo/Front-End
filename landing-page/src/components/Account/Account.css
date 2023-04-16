@@ -1,0 +1,21 @@
+.Login > ul {
+    position: absolute;
+    right:.625rem;
+    top: 2.5rem;
+    list-style: none;
+    border: 1px solid lightgray;
+    text-align: left;
+    padding: 10px;
+    visibility: hidden;
+    background-color: white;
+    
+}
+
+.Login > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.Login > a {
+    color: black;
+}

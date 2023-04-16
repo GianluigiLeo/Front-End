@@ -1,0 +1,7 @@
+{
+    "content": [
+        {"text": "Home", "image_path": "https://demo.ishithemes.com/prestashop/PRS019/modules/ishitopbanners/views/img/topbanner-1.png"},
+        {"text": "About", "image_path": "https://demo.ishithemes.com/prestashop/PRS019/modules/ishitopbanners/views/img/topbanner-2.png"},
+        {"text": "Contatti", "image_path": "https://demo.ishithemes.com/prestashop/PRS019/modules/ishitopbanners/views/img/topbanner-3.png"}
+    ]
+}

@@ -1,0 +1,39 @@
+.Main {
+    /* border: 1px solid red; */
+    height: inherit;
+    background-color: rgb(136, 48, 236);
+    position: relative;
+    width: 100%;
+    top: 3.875rem;
+    animation: animationMain 1s ease 0s 1 normal forwards;
+}
+
+
+/* Animation */
+@keyframes animationMain {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+
+
+/* Media Screen*/
+/* 320px — 480px: dispositivi mobili
+481px — 768px: iPad, tablet
+769px — 1024px: piccoli schermi, laptop
+1025px — 1200px: desktop, schermi di grandi dimensioni
+1201px e oltre: schermi extra large, TV  */
+@media screen and (min-width: 769px){
+    .Main{
+        margin-top: 5.75rem
+    }
+
+}

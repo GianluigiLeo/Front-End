@@ -1,0 +1,66 @@
+/* .Search{
+ 
+} */
+
+.Search > a {
+    color: black;
+}
+
+.searchInput {
+    position: absolute;
+    display: flex;
+    top: 3.125rem;
+    z-index:100;
+
+}
+
+
+.searchInput > form > input{
+    visibility: hidden; 
+    border: none;
+    border:solid 1px #ccc;
+    border-radius: 10px 0px 0px 10px;
+    z-index:100;
+
+}
+
+.iconSearch{
+    width: 1.3rem;
+    height: 1.4rem;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    visibility: hidden;
+    padding: 2px; 
+    z-index:100;
+}
+
+
+/* 320px — 480px: dispositivi mobili
+481px — 768px: iPad, tablet
+769px — 1024px: piccoli schermi, laptop
+1025px — 1200px: desktop, schermi di grandi dimensioni
+1201px e oltre: schermi extra large, TV  */
+
+@media screen and (min-width: 769px){
+    .Search > a{
+        visibility: hidden;
+    }
+
+    .searchInput{
+        position: unset;
+        margin-top: -20px;
+    }
+
+    .searchInput > form > input{
+        visibility: visible;
+    }
+
+
+    .iconSearch{
+        visibility: visible;
+    }
+}
+
+

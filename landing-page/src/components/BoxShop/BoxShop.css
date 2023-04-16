@@ -1,0 +1,72 @@
+.BoxShop{
+    border: 1px solid lightgrey;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin: 1rem;
+    animation: animationBoxShop 1s ease 0s 1 normal forwards;
+    border-radius: 5px;
+    /* width: 40%; */
+}
+
+
+.BoxShop > img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.BoxShop > form {
+    position: absolute;
+    left: 100px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    /* top: 4px; */
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.BoxShop > form > h2{
+    color: white;
+}
+.BoxShop > form > p{
+    color: white;
+    font-size: .8125rem
+}
+
+.BoxShop > form > button {
+    width: 100px;
+    height: 40px;
+    background: green;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: .75rem;
+    color:white;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* Animations */
+@keyframes animationBoxShop {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px) rotate(-200deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0) rotate(0deg);
+	}
+}
+
+/* 320px — 480px: dispositivi mobili
+481px — 768px: iPad, tablet
+769px — 1024px: piccoli schermi, laptop
+1025px — 1200px: desktop, schermi di grandi dimensioni
+1201px e oltre: schermi extra large, TV  */
+
+@media screen and (min-width: 769px){
+
+    
+}

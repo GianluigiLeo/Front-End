@@ -1,0 +1,60 @@
+.Slide {
+    display: none;
+    /* margin: 0.5rem; */
+    width: 100%;
+    /* margin: 10px; */
+}
+
+.Slide:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Slide > img{
+    width: 65%;
+    max-height: 5.50rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid white;
+    animation: animationSlide 1s linear 0s 1 normal forwards;
+}
+
+
+
+.Slide > button {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color:white;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.1s ease-in-out;
+    opacity: 50%;
+}
+
+.Slide > button:hover {
+    transform: scale(1.05);
+}
+
+.Slide > button:active {
+    transform: scale(0.85);
+    opacity: 100%;
+}
+
+/* Animations */
+@keyframes animationSlide {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+

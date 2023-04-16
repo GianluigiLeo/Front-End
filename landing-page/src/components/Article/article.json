@@ -1,0 +1,22 @@
+{
+    "content": [
+        {
+            "title": "Orange",
+            "description": "Eat Natural Love",
+            "image_path": "https://demo.ishithemes.com/prestashop/PRS019/modules/ishitopbanners/views/img/topbanner-1.png", 
+            "link": "#"
+        },
+        {
+            "title": "Apple",
+            "description": "Eat Natural Love",
+            "image_path": "https://demo.ishithemes.com/prestashop/PRS019/modules/ishitopbanners/views/img/topbanner-2.png", 
+            "link": "#"
+        },
+        {
+            "title": "Grapes",
+            "description": "Eat Natural Love",
+            "image_path": "https://demo.ishithemes.com/prestashop/PRS019/modules/ishitopbanners/views/img/topbanner-3.png", 
+            "link": "#"
+        }
+    ]
+}
